@@ -13,14 +13,13 @@ const initialState = {
 const reducer = (state = initialState, action) => {
 
   if (action.type = 'setDurum') {
-    return Object.assign({}, state, { durum: 'Güncellenen Değer ' + action.payload });
+    return Object.assign({}, state, { durum: 'Updated Value ' + action.payload });
   }
 
   return state;
 }
 
 const store = createStore(reducer);
-
 
 export default function App() {
   return (
